@@ -60,7 +60,7 @@ main {
   text-align: center;
 }
 footer {
-  /*   grid-area: 3 / 2 / 4 / 4; */
+  grid-area: 3 / 2 / 4 / 4;
   display: grid;
   place-items: left;
   background-color: var(--orange-color);
@@ -79,9 +79,13 @@ footer > button {
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 200px);
+  }
+  footer,
+  header {
+    grid-area: auto;
   }
 }
